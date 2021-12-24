@@ -32,9 +32,9 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."],
+    labels: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย."],
     datasets: [{
-      label: "กำไร",
+      label: "มูลค่าสินทรัพย์",
       lineTension: 0.3,
       backgroundColor: "rgba(78, 115, 223, 0.05)",
       borderColor: "rgba(78, 115, 223, 1)",
@@ -46,7 +46,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [10.94, 15.66, 16.66, 13.02, 13.56, 7.48, 5.40, 6.41, 7.23, 9.71, 24.45, 11.42],
+      data: [120000,100000,100000,100000,120000,130000,150000,170000,200000,250000,350000],
     }],
   },
   options: {
@@ -69,16 +69,19 @@ var myLineChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
+          autoSkip: false,
           maxTicksLimit: 7
         }
       }],
       yAxes: [{
         ticks: {
+          min: 0,
+          max: 400000,
           maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return '$' + number_format(value);
+            return number_format(value);
           }
         },
         gridLines: {
@@ -110,7 +113,7 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' บาท';
         }
       }
     }
