@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Tables</title>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Topbar Begin -->
+      <iframe src="../topbar.html" seamless frameBorder="0" width="100%"></iframe>
+      <!-- Topbar End -->
+
+      <!-- Main Content Start -->
+      <div id="content">
+
+        <!-- Main Content -->
+        <div class="container-fluid">
+
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  <img src="../img/abstract-user-flat-4.png" width="5%"> ข้อมูลนักลงทุน : จีราภรณ์
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    อาชีพ : พนักงานภาครัฐ<br>
+                    วันที่เริ่มลงทุน : 31 พฤษภาคม 2563<br>
+                    สถานะปัจจุบัน : ลงทุนแล้ว 1 ปี 7 เดือน<br>
+                    จำนวนเงินลงทุนล่าสุด : 45,000 (บาท)<br>
+                    ผลตอบแทนที่ได้รับทั้งหมด : 13,800 (บาท)<br>
+                    Update ข้อมูลล่าสุด : 25 ธันวาคม 2564</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">
+                  ประวัติการจ่ายเงินปันผล ปี 2564 (รวม 10,780 บาท)
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <div class="table">
+                    <table>
+                      <tr>
+                        <td align="center">เดือน</td>
+                        <td>จำนวนเงินปันผลที่ได้รับ (บาท)</td>
+                        <td align="center">หลักฐาน</td>
+                      </tr>
+                      <tr>
+                        <td>มกราคม</td>
+                        <td align="right">900</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256401">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256401" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-01.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>กุมภาพันธ์</td>
+                        <td align="right">800</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256402">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256402" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-02.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>มีนาคม</td>
+                        <td align="right">880</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256403">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256403" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-03.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>เมษายน</td>
+                        <td align="right">960</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256404">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256404" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-04.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>พฤษภาคม</td>
+                        <td align="right">1,300</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256405">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256405" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-05.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>มิถุนายน</td>
+                        <td align="right">1,120</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256406">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256406" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-06.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>กรกฎาคม</td>
+                        <td align="right">1,000</td>
+                        <td colspan="2">
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256407">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256407" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-07.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>สิงหาคม</td>
+                        <td align="right">1,300</td>
+                      </tr>
+                      <tr>
+                        <td>กันยายน</td>
+                        <td align="right">1,120</td>
+                        <td colspan="2">
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256409">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256409" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2564-09.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ตุลาคม</td>
+                        <td align="right">1,400</td>
+                      </tr>
+                      <tr>
+                        <td>พฤศจิกายน</td>
+                        <td align="right"></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>ธันวาคม</td>
+                        <td align="right"></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>รวม</td>
+                        <td align="right">10,780</td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                  ประวัติการจ่ายเงินปันผล ปี 2563 (รวม 3,020 บาท)
+                </a>
+              </div>
+              <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <div class="table">
+                    <table>
+                      <tr>
+                        <td align="center">เดือน</td>
+                        <td>จำนวนเงินปันผลที่ได้รับ (บาท)</td>
+                        <td align="center">หลักฐาน</td>
+                      </tr>
+                      <tr>
+                        <td>มกราคม</td>
+                        <td align="right">-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>กุมภาพันธ์</td>
+                        <td align="right">-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>มีนาคม</td>
+                        <td align="right">-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>เมษายน</td>
+                        <td align="right">-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>พฤษภาคม</td>
+                        <td align="right">-</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>มิถุนายน</td>
+                        <td align="right">100</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256306">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256306" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2563-06.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>กรกฎาคม</td>
+                        <td align="right">240</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256307">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256307" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2563-07.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>สิงหาคม</td>
+                        <td align="right">400</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256308">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256308" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2563-08.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>กันยายน</td>
+                        <td align="right">400</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256309">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256309" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2563-09.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ตุลาคม</td>
+                        <td align="right">600</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256310">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256310" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2563-10.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>พฤศจิกายน</td>
+                        <td align="right">640</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256311">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256311" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2563-11.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ธันวาคม</td>
+                        <td align="right">640</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#myModal256312">ดูหลักฐาน</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal256312" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                  <p align="center"><img src="../img/Jeeraporn/2563-12.jpg" width="400"></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>รวม</td>
+                        <td align="right">3,020</td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Main Content End -->
+
+      <!-- Footer Begin -->
+      <iframe src="../footer.html" seamless frameBorder="0" width="100%"></iframe>
+      <!-- Footer End -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="../js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>

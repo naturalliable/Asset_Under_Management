@@ -28,17 +28,17 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 // Bar Chart Example
-var ctx = document.getElementById("myBarChart");
+var ctx = document.getElementById("myBarChart");  // Acc Asset
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย."],
     datasets: [{
-      label: "Revenue",
+      label: "มูลค่าสินทรัพย์",
       backgroundColor: "#4e73df",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      data: [120000,100000,100000,100000,120000,130000,150000,170000,200000,250000,350000],
     }],
   },
   options: {
@@ -61,6 +61,7 @@ var myBarChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
+          autoSkip: false,
           maxTicksLimit: 6
         },
         maxBarThickness: 25,
@@ -68,12 +69,12 @@ var myBarChart = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 400000,
           maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return '$' + number_format(value);
+            return number_format(value);
           }
         },
         gridLines: {
@@ -103,7 +104,7 @@ var myBarChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' บาท';
         }
       }
     },
@@ -112,17 +113,17 @@ var myBarChart = new Chart(ctx, {
 
 
 
-var ctx = document.getElementById("myBarChart2");
+var ctx = document.getElementById("myBarChart2");  // Acc Investor
 var myBarChart2 = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["January", "February", "March", "April", "May", "June"],
+    labels: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย."],
     datasets: [{
-      label: "Revenue",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#4e73df",
-      data: [4215, 5312, 6251, 7841, 9821, 14984],
+      label: "จำนวนนักลงทุน",
+      backgroundColor: "#d9c82e", // "#4e73df"
+      hoverBackgroundColor: "#d99d2e", // "#2e59d9"
+      borderColor: "#d9c82e", // "#4e73df"
+      data: [4,3,3,3,4,4,4,4,4,4,4],
     }],
   },
   options: {
@@ -145,6 +146,7 @@ var myBarChart2 = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
+          autoSkip: false,
           maxTicksLimit: 6
         },
         maxBarThickness: 25,
@@ -152,12 +154,12 @@ var myBarChart2 = new Chart(ctx, {
       yAxes: [{
         ticks: {
           min: 0,
-          max: 15000,
+          max: 10,
           maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return '$' + number_format(value);
+            return number_format(value);
           }
         },
         gridLines: {
@@ -178,7 +180,7 @@ var myBarChart2 = new Chart(ctx, {
       titleFontSize: 14,
       backgroundColor: "rgb(255,255,255)",
       bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
+      borderColor: '#dddfeb', 
       borderWidth: 1,
       xPadding: 15,
       yPadding: 15,
@@ -187,7 +189,7 @@ var myBarChart2 = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel) +' คน';
         }
       }
     },
@@ -195,17 +197,17 @@ var myBarChart2 = new Chart(ctx, {
 });
 
 
-var ctx = document.getElementById("myBarChart3");  //profit
+var ctx = document.getElementById("myBarChart3");  // Acc Dividend
 var myBarChart3 = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."],
+    labels: ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย."],
     datasets: [{
-      label: "กำไร",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#4e73df",
-      data: [10.94, 15.66, 16.66, 13.02, 13.56, 7.48, 5.40, 6.41, 7.23, 9.71, 24.45, 11.42],
+      label: "เงินปันผลจ่ายสะสม",
+      backgroundColor: "#13d42a",  //"#4e73df"
+      hoverBackgroundColor: "#039114", //2e59d9
+      borderColor: "#13d42a",  //"#4e73df"
+      data: [32220,35620,38820,42100,46300,51240,58016,65466,74410,86110,96610],
     }],
   },
   options: {
@@ -228,19 +230,20 @@ var myBarChart3 = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
+          autoSkip: false,
           maxTicksLimit: 6
         },
         maxBarThickness: 25,
       }],
       yAxes: [{
         ticks: {
-          min: 0,
-          max: 50,
+          min: 20000,
+          max: 100000,
           maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
-            return '$' + number_format(value);
+            return number_format(value);
           }
         },
         gridLines: {
@@ -270,7 +273,7 @@ var myBarChart3 = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' บาท';
         }
       }
     },

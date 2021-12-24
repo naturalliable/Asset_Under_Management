@@ -20,6 +20,9 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </head>
 
 <body id="page-top">
@@ -30,45 +33,132 @@
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
-            <!-- Main Content -->
+            <!-- Topbar Begin -->
+            <iframe src="./topbar.html" seamless frameBorder="0" width="100%"></iframe>
+            <!-- Topbar End -->
+
+            <!-- Main Content Start -->
             <div id="content">
 
-                <!-- Topbar Begin -->
-                <iframe src="./topbar.html" seamless frameBorder="0" width="100%"></iframe>
-                <!-- Topbar End -->
-
-
-                <!-- Page Content -->
-                <!-- Page Content -->
-                <!-- Page Content -->
-                <!-- Page Content -->
-                <!-- Page Content -->
-
-
-
-                <!-- Begin Page Content -->
+                <!-- Main Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">About Me</h1>
-                    <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme.
-                        The charts below have been customized - for further customization options, please visit the <a
-                            target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js
-                            documentation</a>.</p>
-
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                    <i class="fas fa-users"></i> การทำงานของทีมงาน
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <h4>เราเป็นใคร</h4>
+                                    <p>
+                                        เราเป็นทีมงานที่มีความชำนาญในด้านการลงทุนในสาขาต่าง ๆ ทั้งหุ้น กองทุนรวม Forex
+                                        และรวมไปถึง Cryptocurrency ซึ่งแต่ละคนจะมีหน้าที่ดูแลข้อมูลในด้านต่าง ๆ
+                                        เฉพาะด้าน ทำให้สามารถติดตามข่าวสาร รวมถึงการหาช่องว่างเพื่อทำกำไร
+                                    </p>
+                                    <h4>วิธีการทำงาน</h4>
+                                    <p>
+                                        จะคล้ายกับการเป็นผู้จัดการกองทุน (Fund Manager) นั่นคือ
+                                        จะนำเงินที่ได้จากลูกค้ามารวมกันไว้
+                                        แล้วจัดสรรการลงทุนในรูปแบบต่าง ๆ
+                                        เพื่อกระจายความเสี่ยงให้มากที่สุดและได้ผลตอบแทนมากที่สุด จากนั้น
+                                        จะมีการแบ่งปันผลกำไรที่ได้รับมา คืนให้แก่ลูกค้าเป็นรายเดือน
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                    <i class="fas fa-signal"></i> การลงทุนในหุ้น
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        มีการศึกษาหุ้นที่ออกใหม่ (IPO) หุ้นที่อยู่ในตลาด จากหลาย sector
+                                        โดยอาศัยข้อมูลที่เกี่ยวข้องต่าง ๆ
+                                        เช่น Fund Flow, Free Float,ข้อมูลทางบัญชีต่าง ๆ รวมถึงมีการประเมินราคาในอนาคต
+                                        เพื่อกำหนดราคาเป้าหมายของหุ้นสำหรับการทำกำไรจากส่วนต่างของราคา (Capital Gain)
+                                        ได้
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                    <i class="fas fa-chart-pie"></i> การลงทุนในกองทุนรวม
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        มีการกระจายการลงทุนในกองทุนรวมในรูปแบบต่าง ๆ ตั้งแต่ กองทุนรวมตราสารหนี้
+                                        กองทุนรวมตราสารทุน กองทุนรวมผสม รวมไปถึงกองทุนเฉพาะทาง เช่น
+                                        กองทุนที่ลงทุนในหุ้นกลุ่ม techonology กองทุนที่ลงทุนในสินทรัพย์ทางเลือกอย่าง
+                                        ทองคำ เป็นต้น นอกจากนี้ ยังมีกองทุนที่ไปลงทุนในต่างประเทศ เช่น กองทุนอินเดีย จีน
+                                        เป็นต้น ทำให้ความเสี่ยงในการบริหารลดลงอย่างมาก
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseFour">
+                                    <i class="fas fa-search-dollar"></i> การลงทุนใน Forex
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        หนึ่งในสัดส่วนการลงทุนที่ใหญ่ที่สุดของเรา คือ Forex เนื่องจาก Forex
+                                        สามารถใช้เครื่องมือช่วยในการ Trade ได้อย่างมีประสิทธิภาพ ที่เรียกว่า Expert
+                                        Advicer : EA ซึ่งทีมงานมีการพัฒนาอย่างต่อเนื่องจนทำให้ได้ EA
+                                        ที่สามารถทำกำไรได้ในระยะยาวอย่างมั่นคง โดย EA ของเรา มีการทดสอบตลาดนานมากกว่า 1
+                                        ปีแล้ว จึงมั่นใจในประสิทธิภาพของการทำกำไรได้ในระยะยาว
+                                    </p>
+                                    <p>
+                                        สำหรับผลตอบแทนล่าสุด ที่ทำได้ ไม่ต่ำกว่าเดือนละ 5% ดังรูป<br>
+                                        <img src="./img/Forex-256412.jpg">
+                                    </p>
+                                    <p>สามารถดูประวัติผลงานได้ที่นี่ : <a href="https://www.myfxbook.com/members/naturalliable/200/7450200"
+                                            target="_blank">
+                                            <button type="button" class="btn btn-success">Click ที่นี่</button>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                                    <i class="fab fa-bitcoin"></i> การลงทุนใน Cryptocurrency
+                                </a>
+                            </div>
+                            <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        ทางเรายังมีการศึกษา Cryptocurrency เพื่อจะเป็นอีกช่องทางหนึ่งสำหรับการทำกำไร
+                                        โดยจะมีลักษณะการทำกำไรอยู่ 2 รูปแบบ คือ การ trade ทั้งจาก Cryptocurrency และ
+                                        token ที่สามารถทำกำไรได้ รวมไปถึงการเล่นเกมส์ (GameFi) ที่มี Cryptocurrency
+                                        เป็นรางวัล เช่น Axie เป็นต้น
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-                <!-- /.container-fluid -->
 
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
+            <!-- Main Content End -->
 
             <!-- Footer Begin -->
             <iframe src="./footer.html" seamless frameBorder="0" width="100%"></iframe>
             <!-- Footer End -->
-            <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->
@@ -81,25 +171,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
